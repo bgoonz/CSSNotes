@@ -68,6 +68,9 @@ body {
 }
 ```
 
+
 - `position: absolute;`: This property is used to position the element absolutely relative to its nearest positioned ancestor (instead of the default static position).
+
 - `top: 40%;` and `left: 50%;`: These properties set the top and left distance of the element from its nearest positioned ancestor. The `top: 40%` is specifically chosen in this case due to a `clip-path` applied on the parent element, which visually reduces its height.
+
 - `transform: translate(-50%, -50%);`: This transformation is crucial for centering. It effectively shifts the element left and upwards by 50% of its own width and height, respectively. This adjustment is necessary because the `top` and `left` properties alone position the element based on its top-left corner, not its center.
