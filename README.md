@@ -74,3 +74,13 @@ body {
 - `top: 40%;` and `left: 50%;`: These properties set the top and left distance of the element from its nearest positioned ancestor. The `top: 40%` is specifically chosen in this case due to a `clip-path` applied on the parent element, which visually reduces its height.
 
 - `transform: translate(-50%, -50%);`: This transformation is crucial for centering. It effectively shifts the element left and upwards by 50% of its own width and height, respectively. This adjustment is necessary because the `top` and `left` properties alone position the element based on its top-left corner, not its center.
+
+
+
+---
+
+### Animations:
+
+- Generally, there are two ways to animate in CSS, the `transition` property. 
+- keyframes at rule (browsers are only optimized for animating opacity and transform property)
+  -  When other properties are animated, such as `width`, `height`, `margin`, `left/top/right/bottom` (in the context of positioning), etc., the browser may need to perform reflows and repaints. This is because changes in these properties can affect how elements are laid out on the page, which can be a more resource-intensive process.
